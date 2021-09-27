@@ -10,7 +10,7 @@ function App() {
 
 	useEffect(() => {
 		window.localStorage.setItem('tasks', JSON.stringify(tasks))
-	})
+	}, [tasks])
 
   return (
 		<div className='wrapper'>

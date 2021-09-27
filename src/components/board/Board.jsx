@@ -1,3 +1,4 @@
+import uniqid from 'uniqid'
 import {LIST_TYPES, LIST_COPY} from '../../config'
 import List from '../list/List'
 import css from './Board.module.css'
@@ -7,7 +8,7 @@ const Board = (props) => {
 
 	const addNewTask = (title, description) => {
 		const task = {
-			id: Math.random() * 1001,
+			id: uniqid(),
 			title,
 			description,
 			created: new Date().toISOString(),

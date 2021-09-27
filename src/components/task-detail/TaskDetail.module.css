@@ -21,6 +21,7 @@
 
 .status {
 	color: #fff;
+	background: #465571;
 	font-weight: bold;
 	margin: 0;
 	padding: 8px 20px;
@@ -45,4 +46,12 @@
 
 .homeLink:hover {
 	color: #000;
+}
+
+.emptyState {
+	text-align: center;
+}
+
+.emptyStateIcon {
+	width: 200px;
 }
